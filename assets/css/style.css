@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.encabezado {
+    background-color: #58D4B4;
+    color: aliceblue;
+    height: 50px;
+    text-align: center;
+    font-size: 25pt;
+    padding: 20px;
+}
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+}
+
+.ingresoTareas {
+    background-color: beige;
+    text-align: center;
+}
+
+.nuevaTarea {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#entradaTareas {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    width: 60%;
+    height: 30px;
+    box-shadow: 0px 0px 2px 0.5px black;
+}
+
+#botonAgregar {
+    width: 80px;
+    height: 30px;
+    box-shadow: 10px;
+    box-shadow: 0px 0px 2px 0.5px black;
+    cursor: pointer;
+    margin-left: 0.3rem;
+}
+
+.tareasPendientes {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-right-style: dotted;
+    border-right-width: 2px;
+    background-color: rgb(237, 235, 235);
+}
+
+.tareasRealizadas {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(237, 235, 235);
+}
+
+
+.formato-tabla {
+    border-collapse: separate;
+    border-spacing: 10px;
+    border: none;
+    font-size: 15pt;
+    text-align: start;
+    margin-top: 0.3rem;
+
+}
+
+td {
+    max-width: 230px;
+    overflow-wrap: break-word;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Planner Personal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="encabezado">My Planner Personal</nav>
+    <container class="contenedor-principal">
+        <div class="ingresoTareas">
+            <div class="nuevaTarea">
+                <h2>Agregar nueva tarea:</h2>
+                <input id="entradaTareas" type="text">
+                <button id="botonAgregar">Agregar</button>
+            </div>
+            <div style="margin-top:10px;">
+                <h3>Total tareas ingresadas:</h3>
+                <h3 style="margin-top:10px;" id="totalIngresos"></h3>
+            </div>
+            <div style="margin-top:10px;">
+                <h3>Total tareas realizadas:</h3>
+                <h3 style="margin-top:10px; color: #0dc194; font-weight:bolder;" id="totalListo"></h3>
+            </div>
+            
+        </div>
+        <div class="tareasPendientes">
+            <h2 style="margin-bottom: 1rem;">Tareas Pendientes:</h2>
+            <div style="width: 80%; margin:auto;">
+                <table class="formato-tabla">
+                    <tr>
+                        <th style="width: 20px;"></th>
+                        <th style="width: 20px;">ID</th>
+                        <th>TAREA</th>
+                    </tr>
+                </table>
+                <table class="formato-tabla" id="lista-pendientes"></table>
+            </div>
+        </div>
+        <div class="tareasRealizadas">
+            <h2 style="margin-bottom: 1rem;">Tareas Terminadas:</h2>
+            <div style="margin-top: 1rem; width: 80%; margin:auto;">
+                <table class="formato-tabla">
+                    <tr>
+                        <th style="width: 20px;">ID</th>
+                        <th>TAREA</th>
+                    </tr>
+                </table>
+                <table class="formato-tabla" id="lista-realizadas"></table>
+        </div>
+    </container>
+    
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/61229d1a8c.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
